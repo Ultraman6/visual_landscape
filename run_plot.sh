@@ -10,8 +10,8 @@ CUDA_VISIBLE_DEVICES=0,1 python plot_surface.py \
 --fix_coor \
 --plot_init save_net_resnet20_000.pt \
 --base_checkpoint save_net_resnet20_100.pt \
---load_path ./../checkpoints/1101/path_0 \
---direction_path ./../checkpoints/1101/path_0/pca_direction.pt ;
+--load_path ./../checkpoints/1107/path_1 \
+--direction_path ./../checkpoints/1107/path_1/pca_direction.pt ;
 
 CUDA_VISIBLE_DEVICES=0,1 python plot_surface.py \
 --batch_size 8192 \
@@ -25,8 +25,8 @@ CUDA_VISIBLE_DEVICES=0,1 python plot_surface.py \
 --fix_coor \
 --plot_init save_net_resnet20_020.pt \
 --base_checkpoint save_net_resnet20_100.pt \
---load_path ./../checkpoints/1101/path_0 \
---direction_path ./../checkpoints/1101/path_0/pca_direction.pt ;
+--load_path ./../checkpoints/1107/path_1 \
+--direction_path ./../checkpoints/1107/path_1/pca_direction.pt ;
 
 CUDA_VISIBLE_DEVICES=0,1 python plot_surface.py \
 --batch_size 8192 \
@@ -40,8 +40,8 @@ CUDA_VISIBLE_DEVICES=0,1 python plot_surface.py \
 --fix_coor \
 --plot_init save_net_resnet20_050.pt \
 --base_checkpoint save_net_resnet20_100.pt \
---load_path ./../checkpoints/1101/path_0 \
---direction_path ./../checkpoints/1101/path_0/pca_direction.pt ;
+--load_path ./../checkpoints/1107/path_1 \
+--direction_path ./../checkpoints/1107/path_1/pca_direction.pt ;
 
 CUDA_VISIBLE_DEVICES=0,1 python plot_surface.py \
 --batch_size 8192 \
@@ -55,5 +55,5 @@ CUDA_VISIBLE_DEVICES=0,1 python plot_surface.py \
 --fix_coor \
 --plot_init save_net_resnet20_100.pt \
 --base_checkpoint save_net_resnet20_100.pt \
---load_path ./../checkpoints/1101/path_0 \
---direction_path ./../checkpoints/1101/path_0/pca_direction.pt ;
+--load_path ./../checkpoints/1107/path_1 \
+--direction_path ./../checkpoints/1107/path_1/pca_direction.pt ;

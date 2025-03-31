@@ -63,8 +63,8 @@ def get_datasets(args):
             # Use small datasets
 
             if os.path.exists(path):
-                print('read dataset!')
-                trainset = torch.load(path)
+                print(f'read dataset! from {path}')
+                trainset = torch.load(path, weights_only=False)
             else:
                 print('make dataset!')
                 trainset = datasets.CIFAR10(root='../data', train=True, transform=transforms.Compose([

@@ -49,8 +49,6 @@ def update_grad(model, weight_matrix, final_weight_list, origin_loss, direction,
             temp_dx -= grad_dx*args.lr
             temp_dy -= grad_dy * args.lr
 
-
-
     return temp_dx, temp_dy
 
 

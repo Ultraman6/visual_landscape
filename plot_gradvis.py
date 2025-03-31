@@ -103,9 +103,6 @@ def main():
 
 
 
-
-
-
     #
     # h5_to_vtp(losses, xcoord_mesh, ycoord_mesh, args.name + '_loss',
     #           os.path.join('/home/DiskB/rqding/checkpoints_0820/visualization/', args.name), log=True, zmax=-1,

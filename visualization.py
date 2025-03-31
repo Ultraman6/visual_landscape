@@ -56,7 +56,7 @@ def plot_contour_trajectory(val, xcoord_mesh, ycoord_mesh, name, vmin=0.25, vmax
 
 
 def plot_path(model, origin_weight_list, filenames, dataloader, criterion, args):
-    direction_load = torch.load(args.direction_path)
+    direction_load = torch.load(args.direction_path, weights_only=False)
     direction = direction_load["direction"]
     # weight_type = direction_load["weight_type"]
     path_coordinate, path_loss, path_acc = cal_path(model, origin_weight_list, filenames, direction, dataloader,

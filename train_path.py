@@ -74,8 +74,7 @@ def main():
 
     # ---------------------train path -----------------------------
     save_path = os.path.join(args.save_dir, args.name)
-    if not os.path.isdir(save_path):
-        os.mkdir(save_path)
+    os.makedirs(save_path, exist_ok=True)
 
     final_checkpoint = os.path.join(save_path, full_fill_name(args.epoch, len(str(args.epoch))))
     if os.path.isfile(final_checkpoint):
